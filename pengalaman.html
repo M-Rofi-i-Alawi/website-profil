@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="pengalaman.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">ロフィ</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="pengalaman.html">Experience</a>
+            <a href="kontak.html">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-image">
+            <img src="opi.png" alt="Foto Profil">
+        </div>
+        <div class="teks">
+            <p>Selama saya bersekolah di SMKN Cianjur, saya mengikuti organisasi yaitu:</p>
+            <b>Majelis Perwakilan Kelas (MPK).</b><br><br>
+            <p>MPK adalah kepanjangan dari Majelis Perwakilan Kelas. 
+                MPK adalah suatu organisasi di sekolah yang bertugas mengawasi kinerja OSIS dalam menjalankan tugas-tugasnya selama masa jabatannya berlangsung. 
+                MPK merupakan satu-satunya organisasi di sekolah yang dapat memantau, mengawasi dan membantu tugas-tugas dari OSIS.</p><br>
+            <p>Selain mengikuti organisasi, saya juga mengikuti eskul yang ada di SMKN 1 Cianjur seperti: <br> 
+                Ikatan Remaja Masjid (IRMA), eskul Tapakrama (Film) dan eskul Coding.</p>
+        </div>
+    </section>
+<script>
+    const currentPage = window.location.pathname.split("/").pop();
+    const links = document.querySelectorAll(".navbar a");
+
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
+</body>
+</html>

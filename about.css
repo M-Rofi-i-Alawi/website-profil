@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('smakzie.jpg') center/cover no-repeat;
+    filter: blur(5px) brightness(0.6);
+    z-index: -1;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 2s;
+
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(167, 212, 119);
+    text-decoration: underline;
+}
+.home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    padding: 100px 10% 0 10%; 
+}
+
+.home-content {
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    gap: 20px; 
+}
+
+.home-content h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.home-content h1:hover {
+    color: #6A9C89;
+}
+
+.home-content p {
+    color: #fff;
+    max-width: 500px;
+}
+.home-content p:hover {
+    color:  #C1D8C3;
+}
+
+.home img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-align: center;
+}
+.home img:hover {
+    box-shadow: 0 6px 13px #6A9C89 ;
+}
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5%;
+    }
+}

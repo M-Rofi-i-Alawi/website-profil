@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">ロフィ</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="pengalaman.html">Experience</a>
+            <a href="kontak.html">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="img">
+            <div class="home-content">
+                <img src="rofii.jpg" >
+            </div>
+            <div class="teks">
+                <h1>Hi, selamat datang di website saya!!</h1><br>
+                <p>Website profil pribadi adalah situs web yang dibuat oleh seorang individu untuk mempromosikan diri mereka sendiri,
+                    baik untuk tujuan profesional maupun pribadi. 
+                    Situs ini memungkinkan seseorang untuk menampilkan informasi tentang diri mereka, keterampilan, portofolio, dan pengalaman kerja, 
+                    sehingga dapat memberikan kesan pertama yang baik kepada calon klien atau pemberi kerja. </p>
+            </div>
+        </div>
+    </section>
+<script>
+    const currentPage = window.location.pathname.split("/").pop();
+    const links = document.querySelectorAll(".navbar a");
+
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
+</body>
+</html>

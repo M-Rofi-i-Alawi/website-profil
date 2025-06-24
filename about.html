@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">ロフィ</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="pengalaman.html">Experience</a>
+            <a href="kontak.html">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+    </div>
+    <div class="home-content">
+        <h1>Hi, nama saya Muhammad Rofi'i Alawi</h1>
+        <p>Saya adalah salah satu pelajar dari sekolah SMKN 1 Cianjur, saya dari jurusan PPLG dan dari kelas 10 PPLG 2.</p>
+        <div class="home-image">
+            <img src="rofi.jpg">
+    </div>
+    </section>
+<script>
+    const currentPage = window.location.pathname.split("/").pop();
+    const links = document.querySelectorAll(".navbar a");
+
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
+</body>
+</html>

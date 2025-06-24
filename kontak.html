@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="kontak.css"> 
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">ロフィ</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="pengalaman.html">Experience</a>
+            <a href="kontak.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="teks">
+                    <p>Hubungi saya</p>
+                    <p class="github">Github : <a href="https://github.com/M-Rofi-i-Alawi">@M-Rofi-i-Alawi</a></h2>
+                    <p>Instagram : <a href="https://www.instagram.com/rofiialawi/">@rofiialawi</a></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+<script>
+    const currentPage = window.location.pathname.split("/").pop();
+    const links = document.querySelectorAll(".navbar a");
+
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
+</body>
+</html>
